@@ -18,7 +18,10 @@ Se adoptó una arquitectura *Data Mart Comercial* bajo el enfoque *Kimball* comp
 - *PostgreSQL / Hadoop*: Almacenamiento del Data Warehouse y soporte al Data Mart.  
 - *Power BI*: Herramienta de consumo de datos para dashboards y monitoreo de KPIs.  
 - *Gobernanza (catálogo, linaje, accesos)*: Eje transversal que asegura control, seguridad y trazabilidad.  
-- *VirtualBox + Hadoop (Ambari)*: Se configuró una máquina virtual con Hadoop para pruebas iniciales. Se subió el archivo *“flights”* y se creó la tabla en Ambari como validación del entorno de Big Data.  
+- *VirtualBox + Hortonworks Data Platform (HDP)*: Entorno de pruebas desplegado en una máquina virtual, que integra el ecosistema 
+- *Hadoop*. Permite validar la ingesta y gestión de grandes volúmenes de datos.  
+- *Hadoop (HDFS, YARN)*: Infraestructura de almacenamiento distribuido y orquestación de procesos, base para el soporte del Data Mart en entornos Big Data.  
+- *Ambari*: Herramienta de administración y monitoreo del clúster Hadoop/HDP, utilizada para crear y gestionar tablas (ej. prueba con dataset *“flights”*).
 
 ## Riesgos identificados y mitigaciones
 - *Calidad de datos*: Inconsistencias en FOSE, IGV o lecturas estimadas.  
@@ -35,9 +38,10 @@ Se adoptó una arquitectura *Data Mart Comercial* bajo el enfoque *Kimball* comp
 ## Próximos pasos
 - *Docker*: Contenerizar el pipeline ETL y el Data Mart para portabilidad entre entornos.  
 - *Automatización de cargas*: Implementar programación de ingestas y validaciones.  
-- *KPIs adicionales*: Integrar métricas regulatorias (ej. calidad de servicio) en el Data Mart.  
+- *KPIs adicionales*: Integrar métricas regulatorias (ej. calidad de servicio) en el Data Mart.
+- *Consolidación de entorno Big Data*: Aprovechar el uso de *VirtualBox*, *Hortonworks Data Platform (HDP)*, *Hadoop* y *Ambari* como base para el desarrollo y pruebas del proyecto de BI, asegurando escalabilidad y administración centralizada del clúster  
 
 ---
 
-Este documento corresponde al entregable de la *Semana 3 – Arquitectura Preliminar* del curso SI807 – Sistemas de Inteligencia de Negocios.
+Este documento corresponde al entregable de la *Semana del 15/09* del curso SI807 – Sistemas de Inteligencia de Negocios.
 
