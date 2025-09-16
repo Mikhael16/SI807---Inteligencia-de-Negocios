@@ -19,8 +19,7 @@ Se adoptó una arquitectura *Data Mart Comercial* bajo el enfoque *Kimball* comp
 - *Power BI*: Herramienta de consumo de datos para dashboards y monitoreo de KPIs.  
 - *Gobernanza (catálogo, linaje, accesos)*: Eje transversal que asegura control, seguridad y trazabilidad.  
 - *VirtualBox + Hortonworks Data Platform (HDP)*: Entorno de pruebas desplegado en una máquina virtual, que integra el ecosistema 
-- *Hadoop*. Permite validar la ingesta y gestión de grandes volúmenes de datos.  
-- *Hadoop (HDFS, YARN)*: Infraestructura de almacenamiento distribuido y orquestación de procesos, base para el soporte del Data Mart en entornos Big Data.  
+- *Hadoop (HDFS, YARN)*: Infraestructura Big Data que provee almacenamiento distribuido (HDFS) y orquestación de recursos/procesos (YARN), base para la gestión del Data Mart en entornos masivos.
 - *Ambari*: Herramienta de administración y monitoreo del clúster Hadoop/HDP, utilizada para crear y gestionar tablas (ej. prueba con dataset *“flights”*).
 
 ## Riesgos identificados y mitigaciones
